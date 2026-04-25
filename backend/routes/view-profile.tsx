@@ -3,25 +3,21 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import {
-  ActivityIndicator,
-  Alert,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    ActivityIndicator,
+    Alert,
+    SafeAreaView,
+    ScrollView,
+    StatusBar,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from "react-native";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CONSTANTS
 // ─────────────────────────────────────────────────────────────────────────────
-<<<<<<< Updated upstream
-const BASE_URL = "http://172.17.61.86:8030/api"; // Your server IP
-=======
-const BASE_URL = "http://172.17.3.225:8030/api"; // Your server IP
->>>>>>> Stashed changes
+const BASE_URL = "http://172.17.24.135:8030/api"; // Your server IP
 const PRIMARY = "#2196F3";
 const BG_COLOR = "#f5f3ff";
 const CARD_BG = "#ffffff";

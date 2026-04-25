@@ -1311,6 +1311,8 @@ type Job = {
   isNegotiable: boolean;
   schedule: string;
   startDate?: string;
+  endDate?: string | null;
+  endTime?: string | null;
   endSchedule?: string | null;
   address: string;
   rating: number;
@@ -1537,6 +1539,7 @@ export default function LiveJobsScreen() {
               hour: "numeric",
               minute: "2-digit",
             }),
+            endDate: job.endDate ?? null,
             endSchedule: job.endDate
               ? new Date(job.endDate).toLocaleString("en-IN", {
                   day: "numeric",
@@ -1576,8 +1579,8 @@ export default function LiveJobsScreen() {
       const baseDate = job.endDate
         ? new Date(job.endDate)
         : job.startDate
-        ? new Date(job.startDate)
-        : null;
+          ? new Date(job.startDate)
+          : null;
       if (baseDate) {
         const expiry = new Date(
           baseDate.getFullYear(),

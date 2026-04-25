@@ -83,11 +83,7 @@ router.post("/send-otp", async (req, res) => {
 
     // 🚀 SEND TO RELAY SERVER
     const relayUrl =
-<<<<<<< Updated upstream
-      process.env.OTP_RELAY_URL || "http://172.17.61.86:3000/send-otp";
-=======
-      process.env.OTP_RELAY_URL || "http://172.17.3.225:3000/send-otp";
->>>>>>> Stashed changes
+      process.env.OTP_RELAY_URL || "http://172.17.24.135:3000/send-otp";
     const relayRes = await fetch(relayUrl, {
       method: "POST",
       headers: {
