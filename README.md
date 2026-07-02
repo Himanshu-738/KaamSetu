@@ -1,4 +1,4 @@
-# KaamSetuApp 🔗
+# KaamSetu 🔗
 
 **KaamSetu** (Hindi: काम = Work, सेतु = Bridge) is a cross-platform mobile application built to connect workers and employers — bridging the gap between job seekers and opportunities. Built with React Native and Expo, the app runs on Android, iOS, and the web from a single codebase.
 
